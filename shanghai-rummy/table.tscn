@@ -19,78 +19,17 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.61835986, 0.758721, 0.95791465, 1)
 
-[node name="Drawpile" type="Control" parent="."]
-custom_minimum_size = Vector2(120, 180)
-anchors_preset = 0
-offset_left = 532.0
-offset_top = 211.0
-offset_right = 652.0
-offset_bottom = 391.0
-
-[node name="ColorRect" type="ColorRect" parent="Drawpile"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -85.0
-offset_right = -85.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0.5890956, 0.5890956, 0.5890956, 1)
-
-[node name="Card" parent="Drawpile" instance=ExtResource("1_jd0nb")]
-layout_mode = 0
-offset_left = -68.0
-offset_top = 24.0
-offset_right = -28.0
-offset_bottom = 64.0
-
-[node name="Discard" type="Control" parent="."]
-custom_minimum_size = Vector2(120, 180)
-anchors_preset = 0
-offset_left = 1064.0
-offset_top = 422.0
-offset_right = 1184.0
-offset_bottom = 602.0
-
-[node name="ColorRect" type="ColorRect" parent="Discard"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -445.0
-offset_top = -208.0
-offset_right = -445.0
-offset_bottom = -208.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0.32915837, 0.3291584, 0.3291584, 1)
-
-[node name="Card" parent="Discard" instance=ExtResource("1_jd0nb")]
-layout_mode = 0
-offset_left = -428.0
-offset_top = -189.0
-offset_right = -388.0
-offset_bottom = -149.0
-
-[node name="PlayerHand" type="HBoxContainer" parent="."]
-layout_mode = 1
-anchors_preset = 12
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 0
-theme_override_constants/separation = 20
-alignment = 1
-
-[node name="Card" parent="PlayerHand" instance=ExtResource("1_jd0nb")]
-layout_mode = 2
-
 [node name="OpponentHands" type="VBoxContainer" parent="."]
 layout_mode = 1
-anchors_preset = 10
-anchor_right = 1.0
+anchors_preset = -1
+anchor_left = 0.289
+anchor_top = 0.002
+anchor_right = 0.768
+anchor_bottom = 0.177
+offset_left = 0.07199097
+offset_top = -0.296
+offset_right = 0.26397705
+offset_bottom = 0.30400085
 grow_horizontal = 2
 
 [node name="Control" type="Control" parent="OpponentHands"]
@@ -109,18 +48,72 @@ anchor_left = 0.18900001
 anchor_top = 1.0
 anchor_right = 0.84000003
 anchor_bottom = 1.0
-offset_left = 0.27198792
+offset_left = 3.271988
 offset_top = -300.0
 offset_right = 0.3199463
 grow_horizontal = 2
 grow_vertical = 0
 
 [node name="Sets" type="Control" parent="PlayArea"]
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+layout_mode = 1
+anchor_right = 0.526
+anchor_bottom = 0.60300004
+offset_right = 0.07797241
+offset_bottom = 0.099990845
+
+[node name="ColorRect" type="ColorRect" parent="PlayArea/Sets"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.105000004
+anchor_right = 0.975
+anchor_bottom = 1.105
+offset_left = -10.0
+offset_top = -0.005001068
+offset_right = -0.17501831
+offset_bottom = -0.005004883
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.60784316, 1, 0.36078432, 1)
 
 [node name="Runs" type="Control" parent="PlayArea"]
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+layout_mode = 1
+anchor_left = 0.573
+anchor_right = 1.2030001
+anchor_bottom = 0.66
+offset_left = -0.03100586
+offset_right = 0.35894775
+offset_bottom = -15.000015
+grow_horizontal = 0
+
+[node name="ColorRect" type="ColorRect" parent="PlayArea/Runs"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.002
+anchor_top = 0.13100001
+anchor_right = 0.92100006
+anchor_bottom = 1.131
+offset_left = 0.05799997
+offset_top = 0.02699852
+offset_right = 4.2089844
+offset_bottom = 0.026992798
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.93333334, 0.6666667, 0.28235295, 1)
+
+[node name="PlayerHand" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.252
+anchor_top = 0.84000003
+anchor_right = 0.76000005
+anchor_bottom = 1.0
+offset_left = 90.695984
+offset_top = -0.32000732
+offset_right = -0.52008057
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="Card" parent="PlayerHand" instance=ExtResource("1_jd0nb")]
+layout_mode = 2
