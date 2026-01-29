@@ -1,5 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://h1dbwyrblk0g"]
+[gd_scene load_steps=3 format=3 uid="uid://h1dbwyrblk0g"]
 
+[ext_resource type="Texture2D" uid="uid://cqv4vjjeaxkrv" path="res://Cards/backs/red biker.png" id="1_hef1n"]
 [ext_resource type="Texture2D" uid="uid://cjtqmgh48w8al" path="res://Cards/clubs/8.png" id="1_s483p"]
 
 [node name="Card" type="Control"]
@@ -28,6 +29,7 @@ color = Color(0.72156864, 0.72156864, 0.72156864, 0.31764707)
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
+texture = ExtResource("1_hef1n")
 
 [node name="Face" type="TextureRect" parent="."]
 layout_mode = 0
